@@ -1,14 +1,15 @@
 package com.example.circle_module;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
 import com.drouter.api.core.DRouter;
 import com.drouter.api.result.ActionCallback;
 import com.drouter.api.result.RouterResult;
+import com.drouter.common.RouterConstants;
 
 /**
  * description:
@@ -26,7 +27,7 @@ public class CircleActivity extends AppCompatActivity {
 
     public void click(View view) {
         DRouter.getInstance()
-                .action("login/action")
+                .action(RouterConstants.Login.LOGIN_ACTION)
                 .context(CircleActivity.this)
                 .param("key", "value")
                 .invokeAction(new ActionCallback() {

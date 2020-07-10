@@ -3,6 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DRouter.iml" filepath="$PROJECT_DIR$/DRouter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/DRouter-app.iml" filepath="$PROJECT_DIR$/app/DRouter-app.iml" group="DRouter/app" />
+      <module fileurl="file://$PROJECT_DIR$/base-core/DRouter-base-core.iml" filepath="$PROJECT_DIR$/base-core/DRouter-base-core.iml" group="DRouter/base-core" />
+      <module fileurl="file://$PROJECT_DIR$/circle-module/DRouter-circle-module.iml" filepath="$PROJECT_DIR$/circle-module/DRouter-circle-module.iml" group="DRouter/circle-module" />
+      <module fileurl="file://$PROJECT_DIR$/drouter-api/DRouter-drouter-api.iml" filepath="$PROJECT_DIR$/drouter-api/DRouter-drouter-api.iml" group="DRouter/drouter-api" />
+      <module fileurl="file://$PROJECT_DIR$/drouter-base/DRouter-drouter-base.iml" filepath="$PROJECT_DIR$/drouter-base/DRouter-drouter-base.iml" group="DRouter/drouter-base" />
+      <module fileurl="file://$PROJECT_DIR$/drouter-compiler/DRouter-drouter-compiler.iml" filepath="$PROJECT_DIR$/drouter-compiler/DRouter-drouter-compiler.iml" group="DRouter/drouter-compiler" />
+      <module fileurl="file://$PROJECT_DIR$/login-module/DRouter-login-module.iml" filepath="$PROJECT_DIR$/login-module/DRouter-login-module.iml" group="DRouter/login-module" />
+      <module fileurl="file://$PROJECT_DIR$/JokeDemos-DRouter.iml" filepath="$PROJECT_DIR$/JokeDemos-DRouter.iml" group="DRouter" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/base-core/base-core.iml" filepath="$PROJECT_DIR$/base-core/base-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/circle-module/circle-module.iml" filepath="$PROJECT_DIR$/circle-module/circle-module.iml" />
@@ -10,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/drouter-base/drouter-base.iml" filepath="$PROJECT_DIR$/drouter-base/drouter-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/drouter-compiler/drouter-compiler.iml" filepath="$PROJECT_DIR$/drouter-compiler/drouter-compiler.iml" />
       <module fileurl="file://$PROJECT_DIR$/login-module/login-module.iml" filepath="$PROJECT_DIR$/login-module/login-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main-module/main-module.iml" filepath="$PROJECT_DIR$/main-module/main-module.iml" group="DRouter/main-module" />
     </modules>
   </component>
 </project>

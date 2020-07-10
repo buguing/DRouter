@@ -3,6 +3,7 @@ package com.example.circle_module;
 import com.drouter.api.interceptor.ActionInterceptor;
 import com.drouter.api.thread.ActionPost;
 import com.drouter.base.annotation.Interceptor;
+import com.drouter.common.RouterConstants;
 
 /**
  * description:
@@ -17,7 +18,7 @@ public class CircleInterceptor1 implements ActionInterceptor {
     public void intercept(ActionChain chain) {
         ActionPost actionPost = chain.action();
 
-        if (chain.actionPath().equals("circlemodule/test")) {
+        if (chain.actionPath().equals(RouterConstants.Circle.CIRCLE_ACTION)) {
 
             // 拦截
             chain.onInterrupt();

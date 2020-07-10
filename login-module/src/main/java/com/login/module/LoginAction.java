@@ -7,6 +7,7 @@ import com.drouter.api.action.IRouterAction;
 import com.drouter.api.result.RouterResult;
 import com.drouter.base.ThreadMode;
 import com.drouter.base.annotation.Action;
+import com.drouter.common.RouterConstants;
 
 import java.util.Map;
 
@@ -16,7 +17,7 @@ import java.util.Map;
  * email: 240336124@qq.com
  * version: 1.0
  */
-@Action(path = "login/action", threadMode = ThreadMode.MAIN)
+@Action(path = RouterConstants.Login.LOGIN_ACTION, threadMode = ThreadMode.MAIN)
 public class LoginAction implements IRouterAction {
 
     @Override

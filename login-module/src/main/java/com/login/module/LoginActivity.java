@@ -1,8 +1,8 @@
 package com.login.module;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -10,6 +10,7 @@ import android.widget.Toast;
 import com.drouter.api.core.DRouter;
 import com.drouter.api.result.ActionCallback;
 import com.drouter.api.result.RouterResult;
+import com.drouter.common.RouterConstants;
 
 /**
  * description:
@@ -29,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void click(View view){
         DRouter.getInstance()
-                .action("circlemodule/test")
+                .action(RouterConstants.Circle.CIRCLE_ACTION)
                 .context(this)
                 .param("key", "value")
                 .invokeAction(new ActionCallback() {

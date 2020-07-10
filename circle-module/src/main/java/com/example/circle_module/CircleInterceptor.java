@@ -6,6 +6,7 @@ import com.drouter.api.core.DRouter;
 import com.drouter.api.interceptor.ActionInterceptor;
 import com.drouter.api.thread.ActionPost;
 import com.drouter.base.annotation.Interceptor;
+import com.drouter.common.RouterConstants;
 
 /**
  * description:
@@ -19,13 +20,13 @@ public class CircleInterceptor implements ActionInterceptor {
     @Override
     public void intercept(ActionChain chain) {
         ActionPost actionPost = chain.action();
-        if (chain.actionPath().equals("circlemodule/test")) {
+        if (chain.actionPath().equals(RouterConstants.Circle.CIRCLE_ACTION)) {
             Toast.makeText(actionPost.context, "拦截圈子，跳转到登录", Toast.LENGTH_LONG).show();
             // 拦截
             chain.onInterrupt();
             // 跳转到登录页面
             DRouter.getInstance()
-                    .action("login/action")
+                    .action(RouterConstants.Login.LOGIN_ACTION)
                     .context(actionPost.context)
                     .invokeAction();
         }

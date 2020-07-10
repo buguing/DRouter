@@ -1,1 +1,1 @@
-include ':app', ':drouter-api', ':login-module', ':base-core', ':drouter-compiler', ':drouter-base', ':circle-module'
+include ':app', ':drouter-api', ':login-module', ':base-core', ':drouter-compiler', ':drouter-base', ':circle-module', ':main-module'
